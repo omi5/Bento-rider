@@ -1,0 +1,54 @@
+.signInHeader{
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+}
+.header-div{
+    margin: 0 auto;
+    text-align: center;
+}
+input{
+    text-align: center;
+}
+.input-box{
+    display: block;
+    /* margin-left: 15px;  */
+    width: 100%; 
+    height: 58px; 
+    font-size: 18px; 
+    border: 1px solid gray;
+    border-radius: 28px; 
+    margin-bottom: 15px;
+}
+.forgotPass{
+   color: #A82723;
+   float: right; 
+   font-size: 16px;
+   margin-right: 25px;
+}
+.signIn-btn-div{
+    margin-top: 75px;
+    text-align: center;
+}
+.signIn-btn-div a{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.signIn-btn{
+    display: block; 
+    /* margin-left: 15px;  */
+    width: 100%; 
+    height: 58px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    background-color: #00A080; 
+    color: #fff; 
+    border: none; 
+    border-radius: 28px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+input::placeholder{
+    color: #000;
+}

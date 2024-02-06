@@ -1,0 +1,66 @@
+
+    
+
+<nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+     
+      <ul id="menu">
+        <a (click)="openForProfile()"><li>Profile</li></a>
+        <a  (click)="openForRideHistory()"><li>Ride history</li></a>
+        <button type="button" class="logout-btn">Logout</button>
+      </ul>
+    </div>
+  </nav>
+  <div style="position: absolute; bottom: 0; text-align: center; width: 100%; margin: 0 auto;">
+        <button type="button" (click)="openForRideNotification()">open</button>
+  </div>
+
+
+
+
+  <nz-drawer
+      style="border-radius: 28px;"
+      [nzHeight]="480"
+      [nzClosable]="false"
+      [nzVisible]="visibleForProfile"
+      nzPlacement="left"
+      nzTitle=""
+      (nzOnClose)="closeForProfile()"
+    >
+      <ng-container *nzDrawerContent>
+       <h1>Hello</h1>
+      </ng-container>
+  </nz-drawer>
+
+<nz-drawer
+  class="ant-drawer-content"
+  [nzHeight]="200"
+  [nzWidth]="430"
+  [nzClosable]="false"
+  [nzVisible]="visibleForRideHistory"
+  nzPlacement="left"
+  nzTitle=""
+  (nzOnClose)="closeForRideHistory()"
+>
+  <ng-container *nzDrawerContent>
+   <app-rider-history (notifyParent)="closeForRideHistory()"></app-rider-history>
+  </ng-container>
+</nz-drawer>
+
+<!-- <nz-drawer 
+  style="border-radius: 28px;"
+  [nzHeight]="580"
+  [nzClosable]="false"
+  [nzVisible]="visibleForRideNotification"
+  nzPlacement="bottom"
+  nzTitle=""
+  (nzOnClose)="closeForRideNotification()"
+>
+  <ng-container *nzDrawerContent>
+  <app-order-notification></app-order-notification>
+  </ng-container>
+</nz-drawer> -->

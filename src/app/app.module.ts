@@ -15,6 +15,14 @@ import en from '@angular/common/locales/en';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { MapComponent } from './map/map.component';
+
+//for icon
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { RiderHistoryComponent } from './rider-history/rider-history.component';
+import { OrderNotificationComponent } from './order-notification/order-notification.component';
 
 registerLocaleData(en);
 
@@ -23,6 +31,11 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     DrawerComponent,
+    SignInComponent,
+    SignUpComponent,
+    MapComponent,
+    RiderHistoryComponent,
+    OrderNotificationComponent,
     
   ],
   imports: [
@@ -31,7 +44,8 @@ registerLocaleData(en);
     NzDrawerModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NzIconModule
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

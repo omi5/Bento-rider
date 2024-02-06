@@ -6,16 +6,42 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./drawer.component.css']
 })
 export class DrawerComponent implements OnInit{
+  // small : number = 580
+  size: 'large' | 'default' = 'default';
+
   ngOnInit(): void {
    this.open()
   }
-  visible = false;
+  showLarge(): void {
+    this.size = 'large';  
+  }
+
+  visible: boolean = false;
   
-  open(): void {
+  open(): void {   
     this.visible = true;
   }
 
   close(): void {
     this.visible = false;
+  }
+
+  visibleForSignin: boolean = false;
+  openForSignin(): void {   
+    this.visibleForSignin = true;
+  }
+
+  closeForSignin(): void {
+    this.visibleForSignin = false;
+  }
+
+  
+  visibleForSignup: boolean = false;
+  openForSignup(): void {   
+    this.visibleForSignup = true;
+  }
+
+  closeForSignup(): void {
+    this.visibleForSignup = false;
   }
 }
