@@ -1,7 +1,6 @@
+<div class="map" id="map" class="match-parent"></div>
 
-    
-
-<nav role="navigation">
+  <nav role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
       <span></span>
@@ -15,9 +14,13 @@
       </ul>
     </div>
   </nav>
-  <div style="position: absolute; bottom: 0; text-align: center; width: 100%; margin: 0 auto;">
-        <button type="button" (click)="openForRideNotification()">open</button>
+  <div style="position: absolute; bottom: 0; text-align: center;  width: 100%; margin: 0 auto;">
+        <button type="button" (click)="openForSignin()">open</button>
   </div>
+
+ 
+
+
 
 
 
@@ -64,3 +67,17 @@
   <app-order-notification></app-order-notification>
   </ng-container>
 </nz-drawer> -->
+
+<nz-drawer
+      style="border-radius: 28px;"
+      [nzHeight]="580"
+      [nzClosable]="false"
+      [nzVisible]="visibleForSignin"
+      nzPlacement="bottom"
+      nzTitle=""
+      (nzOnClose)="closeForSignin()"
+    >
+      <ng-container *nzDrawerContent>
+       <app-order-notification></app-order-notification>
+      </ng-container>
+</nz-drawer>

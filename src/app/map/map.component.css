@@ -5,25 +5,35 @@
    padding: 0;
    background: #232323;
    color: #cdcdcd;
-
  }
+ .match-parent {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
  
  #menuToggle
  {
    display: block;
-   position: relative;
+   position: absolute;
    top: 50px;
    left: 50px;
+   width: 85%;
    z-index: 1;
    -webkit-user-select: none;
    user-select: none;
+  
  }
+
+ .navigation{
+  position: relative;
+  width: 100%;
+}
  
  #menuToggle a
  {
    text-decoration: none;
    color: #232323;
-   
    transition: color 0.3s ease;
  }
  

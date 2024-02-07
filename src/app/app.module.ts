@@ -23,6 +23,9 @@ import { MapComponent } from './map/map.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { RiderHistoryComponent } from './rider-history/rider-history.component';
 import { OrderNotificationComponent } from './order-notification/order-notification.component';
+import { TestmapComponent } from './testmap/testmap.component';
+import { MapComponent1 } from './mapbox/map.component';
+import { AnimationComponent } from './animation/animation.component';
 
 registerLocaleData(en);
 
@@ -34,8 +37,11 @@ registerLocaleData(en);
     SignInComponent,
     SignUpComponent,
     MapComponent,
+    MapComponent1,
     RiderHistoryComponent,
     OrderNotificationComponent,
+    TestmapComponent,
+    AnimationComponent,
     
   ],
   imports: [

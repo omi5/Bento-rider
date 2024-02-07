@@ -1,0 +1,79 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+  
+}
+.pickup-container{
+    display: flex;
+}
+.pickup-information{
+    line-height: 0.3rem;
+    margin-left: 4%;
+    width: 185px;
+    height: auto;
+    
+
+}
+.chef-div img{
+    width: 30px;
+    height: 30px;
+    padding-top: 4%;
+}
+.picup-meg{
+    /* font-size: 13px; */
+    /* font-weight: bold; */
+}
+.res-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FC8019;
+}
+.address{
+    /* font-size: 14; */
+    /* font-weight: bold; */
+}
+.item-details{
+    margin-left: 8%;
+    line-height: 0.9rem;
+}
+.signIn-btn{
+    display: block; 
+    /* margin-left: 15px;  */
+    width: 100%; 
+    height: 58px; 
+    font-size: 16px; 
+    font-weight: bold; 
+   
+    background-color: #00A080; 
+    color: #fff; 
+    border: none; 
+    border-radius: 28px;
+    margin-top: 20%;
+    text-align: center;
+}
+.position{
+    position: relative;
+}
+.due-time{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 0.2rem;
+    color: #fff;
+    background-color: #00A080;
+    position: absolute;
+    top: -33%;
+    right: 20px;
+    
+    /* margin: 0 auto; */
+}
+.item-center{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15%;
+}
+.time{
+   font-size: 26px; 
+   font-weight: bold;
+}
